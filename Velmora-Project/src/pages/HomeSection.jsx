@@ -1,0 +1,462 @@
+// import HeaderSec from "../components/Header.jsx";
+// import FooterSec from "../components/Footer.jsx";
+
+// import imgone from '../assets/table_three_(2).png'
+// import bg_image from '../assets/steak.png'
+// import nine from '../assets/box.png'
+
+// import one from '../assets/one.png'
+// import five from '../assets/d1405d55c_generated_b5ca51b0.png'
+
+
+// function Fullcomp(props) {
+//     return(
+
+//     <div className="flex overflow-hidden group relative flex-col gap-5">
+//         <div className="w-full h-100 overflow-hidden group relative">
+//             <img src={props.imageText}  alt="" className="h-full  w-full block object-cover transition-all duration-500 ease-in-out group-hover:scale-105" />
+//             <div className="absolute bottom-6 left-6">
+//                 <h1 className="text-[30px] leading-9 font-light text-[#F8F6F1] font-cormorant">{props.header}</h1>
+//                 <p className="text-[12px] leading-4 font-normal tracking-[.6px] text-[#988C81]">{props.paragraph}</p>
+//             </div>
+//         </div>
+//         <div className="flex justify-between">
+//             <h1 className="text-[20px] leading-7 font-normal text-[#C09D59] font-cormorant">{props.price}</h1>
+//             <h1 className="text-[12px] leading-4 font-normal tracking-[2.4px] text-[#988C81] uppercase">View dish</h1>
+//         </div>
+//     </div>
+//     )
+// }
+
+
+
+// function HomeSection() {
+//   return (
+//     <>
+//       <HeaderSec />
+//       <section  style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(${bg_image})` }} className='w-full py-35 flex items-center justify-center flex-col text-center gap-5 bg-cover bg-center bg-no-repeat'>
+//         <h1 className='text-[96px] leading-[96PX] font-light tracking-[6.4px] text-[#F8F6F1] font-cormorant'>Where Every <br /><span className='text-[#AD8D50] italic'>Flavour</span> Tells a Story</h1>
+//         <p className="font-normal leading-6 tracking-[1.6px] text-[#988C81] font-inter text-[18px] max-w-135">An immersive journey through the world's finest ingredients, crafted with precision by our visionary chefs.</p>
+//         <div className="flex gap-5 mt-3">
+//             <a href="" className="uppercase border border-solid font-medium box-border text-[#0A0A0A] bg-[#C09D59] text-[12px] leading-4 tracking-[3.6px] py-4 px-10">reserve a table</a>
+//             <a href="" className="uppercase text-[12px] leading-4 font-medium tracking-[3.6px] bg-inherit text-[#FFFFFF] py-4 px-10 border border-solid border-[#977c46]">explore the menu</a>
+//         </div>
+//       </section>
+//       <section className="w-full bg-[#0a0a0a] flex justify-center py-50">
+//         <div className="w-[90%] flex flex-col justify-center items-center gap-20">
+//         <div className="w-full flex flex-col justify-center items-center gap-20 text-center">
+//             <div className="flex flex-col gap-8 w-full justify-center items-center">
+
+//               <p className="text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px]  font-inter">
+//                   The Philosophy
+//               </p>
+  
+//               <h1 className="text-[60px] font-thin leading-18 text-[#F8F6F1]  font-cormorant">
+//                   An Art Form <span className="italic"><br/>Beyond Cuisine</span>
+//               </h1>
+  
+//               {/* Decorator */}
+//               <div className="flex items-center justify-center gap-3.75">
+//                   <div className="w-11.75 h-px bg-linear-to-r from-[#0A0A0A] to-[#735E35]" />
+//                   <div className="w-1.5 h-1.5 rounded-full bg-[#735E35]" />
+//                   <div className="w-11.75 h-px bg-linear-to-l from-[#0A0A0A] to-[#735E35]" />
+//               </div>
+  
+//               <p className="text-[18px] leading-7 font-normal  text-[#988c81]  font-inter max-w-180">At Aurelian, we believe dining transcends nourishment. It is theatre, intimacy, and artistry converging on a single plate. Every ingredient is sourced from the world's finest purveyors, every technique refined through generations of culinary mastery.</p>
+  
+//             </div>
+
+  
+//           </div>
+
+//             <div className="relative">
+//                 <img src={imgone} alt="" />
+//                 <div className="absolute flex flex-col gap-3 bottom-20 left-20">
+//                     <h1 className="text-[#DFDDD9] font-cormorant italic text-[36px] leading-10 font-light">"The finest ingredients deserve the finest stage."</h1>
+//                     <p className="text-[12px] font-normal tracking-[3.6px] font-inter text-[#C09D59] uppercase">— Chef Alessandro Moretti</p>
+//                 </div>
+//             </div>
+//         </div>
+//       </section>
+
+//       <section className="w-full bg-[#0a0a0a] flex justify-center py-50">
+//         <div className="w-[90%] flex flex-col justify-center items-center gap-20">
+//         <div className="w-full flex flex-col justify-center items-center gap-20 text-center">
+//             <div className="flex flex-col gap-8 w-full justify-center items-center">
+
+//               <p className="text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px]  font-inter">
+//                   Signature Collection
+//               </p>
+  
+//               <h1 className="text-[60px] font-thin leading-18 text-[#F8F6F1]  font-cormorant">
+//                     Chef's <span className="italic">Masterpieces</span>
+//               </h1>
+
+//             </div>
+
+  
+//           </div>
+
+//             <div className="grid grid-cols-3 gap-8 w-full">
+//                 <Fullcomp
+//                     imageText={one}
+//                     header='Toro Sashimi'
+//                     paragraph='Japanese Bluefin · Yusu · Gold Leaf'
+//                     price='$68'
+//                 />
+
+//                 <Fullcomp
+//                     imageText={five}
+//                     header='Lobster Thermidor'
+//                     paragraph='Nova Scotia Lobster · Gruyere · Black Truffle'
+//                     price='$96'
+//                 />
+
+//                 <Fullcomp
+//                     imageText={nine}
+//                     header='Noir Chocolate Souffle'
+//                     paragraph='Valrhona 72% · Tahitian Vanilla · Gold Dust'
+//                     price='$38'
+//                 />
+//             </div>
+
+//             <div className="flex items-center justify-center gap-3.75">
+//                   <div className="w-11.75 h-px bg-linear-to-r from-[#0A0A0A] to-[#735E35]" />
+//                   <div className="w-1.5 h-1.5 rounded-full bg-[#735E35]" />
+//                   <div className="w-11.75 h-px bg-linear-to-l from-[#0A0A0A] to-[#735E35]" />
+//               </div>
+  
+//             <h1 className="text-[12px] font-normal tracking-[3px] text-[#C09D59] uppercase flex gap-1 justify-center items-center">Explore full menu <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></h1>
+//         </div>
+//       </section>
+//       <FooterSec />
+//     </>
+//   );
+// }
+
+// export default HomeSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import HeaderSec from "../components/Header.jsx";
+// import FooterSec from "../components/Footer.jsx";
+
+// import imgone from '../assets/table_three_(2).png'
+// import bg_image from '../assets/steak.png'
+// import nine from '../assets/box.png'
+
+// import one from '../assets/one.png'
+// import five from '../assets/d1405d55c_generated_b5ca51b0.png'
+
+
+// function Fullcomp(props) {
+//     return(
+
+//     <div data-reveal data-delay={props.delay} className="flex overflow-hidden group relative flex-col gap-5">
+//         <div className="w-full h-100 overflow-hidden group relative">
+//             <img src={props.imageText}  alt="" className="h-full  w-full block object-cover transition-all duration-500 ease-in-out group-hover:scale-105" />
+//             <div className="absolute bottom-6 left-6">
+//                 <h1 className="text-[30px] leading-9 font-light text-[#F8F6F1] font-cormorant">{props.header}</h1>
+//                 <p className="text-[12px] leading-4 font-normal tracking-[.6px] text-[#988C81]">{props.paragraph}</p>
+//             </div>
+//         </div>
+//         <div className="flex justify-between">
+//             <h1 className="text-[20px] leading-7 font-normal text-[#C09D59] font-cormorant">{props.price}</h1>
+//             <h1 className="text-[12px] leading-4 font-normal tracking-[2.4px] text-[#988C81] uppercase">View dish</h1>
+//         </div>
+//     </div>
+//     )
+// }
+
+
+
+// function HomeSection() {
+//   return (
+//     <>
+//       <HeaderSec />
+//       <section  style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(${bg_image})` }} className='w-full py-35 flex items-center justify-center flex-col text-center gap-5 bg-cover bg-center bg-no-repeat'>
+//         <h1 data-reveal className='text-[96px] leading-[96PX] font-light tracking-[6.4px] text-[#F8F6F1] font-cormorant'>Where Every <br /><span className='text-[#AD8D50] italic'>Flavour</span> Tells a Story</h1>
+//         <p data-reveal data-delay="80" className="font-normal leading-6 tracking-[1.6px] text-[#988C81] font-inter text-[18px] max-w-135">An immersive journey through the world's finest ingredients, crafted with precision by our visionary chefs.</p>
+//         <div data-reveal data-delay="160" className="flex gap-5 mt-3">
+//             <a href="" className="uppercase border border-solid font-medium box-border text-[#0A0A0A] bg-[#C09D59] text-[12px] leading-4 tracking-[3.6px] py-4 px-10">reserve a table</a>
+//             <a href="" className="uppercase text-[12px] leading-4 font-medium tracking-[3.6px] bg-inherit text-[#FFFFFF] py-4 px-10 border border-solid border-[#977c46]">explore the menu</a>
+//         </div>
+//       </section>
+//       <section className="w-full bg-[#0a0a0a] flex justify-center py-50">
+//         <div className="w-[90%] flex flex-col justify-center items-center gap-20">
+//         <div className="w-full flex flex-col justify-center items-center gap-20 text-center">
+//             <div className="flex flex-col gap-8 w-full justify-center items-center">
+
+//               <p data-reveal className="text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px]  font-inter">
+//                   The Philosophy
+//               </p>
+  
+//               <h1 data-reveal data-delay="80" className="text-[60px] font-thin leading-18 text-[#F8F6F1]  font-cormorant">
+//                   An Art Form <span className="italic"><br/>Beyond Cuisine</span>
+//               </h1>
+  
+//               {/* Decorator */}
+//               <div data-reveal data-delay="160" className="flex items-center justify-center gap-3.75">
+//                   <div className="w-11.75 h-px bg-linear-to-r from-[#0A0A0A] to-[#735E35]" />
+//                   <div className="w-1.5 h-1.5 rounded-full bg-[#735E35]" />
+//                   <div className="w-11.75 h-px bg-linear-to-l from-[#0A0A0A] to-[#735E35]" />
+//               </div>
+  
+//               <p data-reveal data-delay="240" className="text-[18px] leading-7 font-normal  text-[#988c81]  font-inter max-w-180">At Aurelian, we believe dining transcends nourishment. It is theatre, intimacy, and artistry converging on a single plate. Every ingredient is sourced from the world's finest purveyors, every technique refined through generations of culinary mastery.</p>
+  
+//             </div>
+
+  
+//           </div>
+
+//             <div data-reveal className="relative">
+//                 <img src={imgone} alt="" />
+//                 <div className="absolute flex flex-col gap-3 bottom-20 left-20">
+//                     <h1 className="text-[#DFDDD9] font-cormorant italic text-[36px] leading-10 font-light">"The finest ingredients deserve the finest stage."</h1>
+//                     <p className="text-[12px] font-normal tracking-[3.6px] font-inter text-[#C09D59] uppercase">— Chef Alessandro Moretti</p>
+//                 </div>
+//             </div>
+//         </div>
+//       </section>
+
+//       <section className="w-full bg-[#0a0a0a] flex justify-center py-50">
+//         <div className="w-[90%] flex flex-col justify-center items-center gap-20">
+//         <div className="w-full flex flex-col justify-center items-center gap-20 text-center">
+//             <div className="flex flex-col gap-8 w-full justify-center items-center">
+
+//               <p data-reveal className="text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px]  font-inter">
+//                   Signature Collection
+//               </p>
+  
+//               <h1 data-reveal data-delay="80" className="text-[60px] font-thin leading-18 text-[#F8F6F1]  font-cormorant">
+//                     Chef's <span className="italic">Masterpieces</span>
+//               </h1>
+
+//             </div>
+
+  
+//           </div>
+
+//             <div className="grid grid-cols-3 gap-8 w-full">
+//                 <Fullcomp
+//                     imageText={one}
+//                     header='Toro Sashimi'
+//                     paragraph='Japanese Bluefin · Yusu · Gold Leaf'
+//                     price='$68'
+//                     delay="0"
+//                 />
+
+//                 <Fullcomp
+//                     imageText={five}
+//                     header='Lobster Thermidor'
+//                     paragraph='Nova Scotia Lobster · Gruyere · Black Truffle'
+//                     price='$96'
+//                     delay="80"
+//                 />
+
+//                 <Fullcomp
+//                     imageText={nine}
+//                     header='Noir Chocolate Souffle'
+//                     paragraph='Valrhona 72% · Tahitian Vanilla · Gold Dust'
+//                     price='$38'
+//                     delay="160"
+//                 />
+//             </div>
+
+//             <div data-reveal className="flex items-center justify-center gap-3.75">
+//                   <div className="w-11.75 h-px bg-linear-to-r from-[#0A0A0A] to-[#735E35]" />
+//                   <div className="w-1.5 h-1.5 rounded-full bg-[#735E35]" />
+//                   <div className="w-11.75 h-px bg-linear-to-l from-[#0A0A0A] to-[#735E35]" />
+//               </div>
+  
+//             <a href="" data-reveal className="text-[12px] font-normal tracking-[3px] text-[#C09D59] uppercase flex gap-1 justify-center items-center">Explore full menu <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+//         </div>
+//       </section>
+//       <FooterSec />
+//     </>
+//   );
+// }
+
+// export default HomeSection;
+
+
+
+
+
+
+
+import { useNavigate } from "react-router-dom";
+import HeaderSec from "../components/Header.jsx";
+import FooterSec from "../components/Footer.jsx";
+
+import imgone from '../assets/table_three_(2).png'
+import bg_image from '../assets/steak.png'
+import nine from '../assets/box.png'
+
+import one from '../assets/one.png'
+import five from '../assets/d1405d55c_generated_b5ca51b0.png'
+
+
+function Fullcomp(props) {
+    return(
+    <div data-reveal data-delay={props.delay} className="flex overflow-hidden group relative flex-col gap-5">
+        <div className="w-full h-100 overflow-hidden group relative">
+            <img src={props.imageText} alt="" className="h-full w-full block object-cover transition-all duration-500 ease-in-out group-hover:scale-105" />
+            <div className="absolute bottom-6 left-6">
+                <h1 className="text-[30px] leading-9 font-light text-[#F8F6F1] font-cormorant">{props.header}</h1>
+                <p className="text-[12px] leading-4 font-normal tracking-[.6px] text-[#988C81]">{props.paragraph}</p>
+            </div>
+        </div>
+        <div className="flex justify-between">
+            <h1 className="text-[20px] leading-7 font-normal text-[#C09D59] font-cormorant">{props.price}</h1>
+            <h1 className="text-[12px] leading-4 font-normal tracking-[2.4px] text-[#988C81] uppercase">View dish</h1>
+        </div>
+    </div>
+    )
+}
+
+
+function HomeSection() {
+  const navigate = useNavigate();
+
+  function goTo(path) {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  return (
+    <>
+      <HeaderSec />
+      <section style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(${bg_image})` }} className='w-full py-35 flex items-center justify-center flex-col text-center gap-5 bg-cover bg-center bg-no-repeat'>
+        <h1 data-reveal className='text-[96px] leading-[96PX] font-light tracking-[6.4px] text-[#F8F6F1] font-cormorant'>Where Every <br /><span className='text-[#AD8D50] italic'>Flavour</span> Tells a Story</h1>
+        <p data-reveal data-delay="80" className="font-normal leading-6 tracking-[1.6px] text-[#988C81] font-inter text-[18px] max-w-135">An immersive journey through the world's finest ingredients, crafted with precision by our visionary chefs.</p>
+        <div data-reveal data-delay="160" className="flex gap-5 mt-3">
+            <button
+              onClick={() => goTo("/reservation")}
+              className="uppercase border border-solid font-medium box-border text-[#0A0A0A] bg-[#C09D59] text-[12px] leading-4 tracking-[3.6px] py-4 px-10 cursor-pointer"
+            >
+              reserve a table
+            </button>
+            <button
+              onClick={() => goTo("/menu")}
+              className="uppercase text-[12px] leading-4 font-medium tracking-[3.6px] bg-inherit text-[#FFFFFF] py-4 px-10 border border-solid border-[#977c46] cursor-pointer"
+            >
+              explore the menu
+            </button>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#0a0a0a] flex justify-center py-50">
+        <div className="w-[90%] flex flex-col justify-center items-center gap-20">
+          <div className="w-full flex flex-col justify-center items-center gap-20 text-center">
+            <div className="flex flex-col gap-8 w-full justify-center items-center">
+
+              <p data-reveal className="text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px] font-inter">
+                  The Philosophy
+              </p>
+
+              <h1 data-reveal data-delay="80" className="text-[60px] font-thin leading-18 text-[#F8F6F1] font-cormorant">
+                  An Art Form <span className="italic"><br/>Beyond Cuisine</span>
+              </h1>
+
+              {/* Decorator */}
+              <div data-reveal data-delay="160" className="flex items-center justify-center gap-3.75">
+                  <div className="w-11.75 h-px bg-linear-to-r from-[#0A0A0A] to-[#735E35]" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#735E35]" />
+                  <div className="w-11.75 h-px bg-linear-to-l from-[#0A0A0A] to-[#735E35]" />
+              </div>
+
+              <p data-reveal data-delay="240" className="text-[18px] leading-7 font-normal text-[#988c81] font-inter max-w-180">At Aurelian, we believe dining transcends nourishment. It is theatre, intimacy, and artistry converging on a single plate. Every ingredient is sourced from the world's finest purveyors, every technique refined through generations of culinary mastery.</p>
+
+            </div>
+          </div>
+
+          <div data-reveal className="relative">
+              <img src={imgone} alt="" />
+              <div className="absolute flex flex-col gap-3 bottom-20 left-20">
+                  <h1 className="text-[#DFDDD9] font-cormorant italic text-[36px] leading-10 font-light">"The finest ingredients deserve the finest stage."</h1>
+                  <p className="text-[12px] font-normal tracking-[3.6px] font-inter text-[#C09D59] uppercase">— Chef Alessandro Moretti</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#0a0a0a] flex justify-center py-50">
+        <div className="w-[90%] flex flex-col justify-center items-center gap-20">
+          <div className="w-full flex flex-col justify-center items-center gap-20 text-center">
+            <div className="flex flex-col gap-8 w-full justify-center items-center">
+
+              <p data-reveal className="text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px] font-inter">
+                  Signature Collection
+              </p>
+
+              <h1 data-reveal data-delay="80" className="text-[60px] font-thin leading-18 text-[#F8F6F1] font-cormorant">
+                    Chef's <span className="italic">Masterpieces</span>
+              </h1>
+
+            </div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-8 w-full">
+              <Fullcomp
+                  imageText={one}
+                  header='Toro Sashimi'
+                  paragraph='Japanese Bluefin · Yusu · Gold Leaf'
+                  price='$68'
+                  delay="0"
+              />
+              <Fullcomp
+                  imageText={five}
+                  header='Lobster Thermidor'
+                  paragraph='Nova Scotia Lobster · Gruyere · Black Truffle'
+                  price='$96'
+                  delay="80"
+              />
+              <Fullcomp
+                  imageText={nine}
+                  header='Noir Chocolate Souffle'
+                  paragraph='Valrhona 72% · Tahitian Vanilla · Gold Dust'
+                  price='$38'
+                  delay="160"
+              />
+          </div>
+
+          <div data-reveal className="flex items-center justify-center gap-3.75">
+              <div className="w-11.75 h-px bg-linear-to-r from-[#0A0A0A] to-[#735E35]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#735E35]" />
+              <div className="w-11.75 h-px bg-linear-to-l from-[#0A0A0A] to-[#735E35]" />
+          </div>
+
+          <button
+            data-reveal
+            onClick={() => goTo("/menu")}
+            className="text-[12px] font-normal tracking-[3px] text-[#C09D59] uppercase flex gap-1 justify-center items-center cursor-pointer bg-transparent border-0"
+          >
+            Explore full menu
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+
+        </div>
+      </section>
+      <FooterSec />
+    </>
+  );
+}
+
+export default HomeSection;
