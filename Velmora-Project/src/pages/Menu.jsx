@@ -468,15 +468,13 @@ function Halfcomp(props) {
         <button className="border-0 bg-[#C09D59] text-black p-2.5 lg:p-3 rounded-4xl absolute bottom-4 right-4 lg:bottom-6 lg:right-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="w-4 h-4 lg:w-5 lg:h-5"
+            className="w-6 h-6 lg:w-5 lg:h-5"
           >
             <path d="M5 12h14" />
             <path d="M12 5v14" />
@@ -485,16 +483,16 @@ function Halfcomp(props) {
       </div>
 
       {/* Text */}
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-3">
         <div className="flex justify-between items-start gap-2">
-          <h1 className="text-[17px] lg:text-[20px] font-light leading-6 lg:leading-7 text-[#F8F6F1] font-cormorant">
+          <h1 className="text-[22px] lg:text-[20px] font-light leading-6 lg:leading-7 text-[#F8F6F1] font-cormorant">
             {props.header}
           </h1>
-          <h1 className="text-[18px] lg:text-[21px] leading-6 lg:leading-7 font-normal text-[#C09D59] font-cormorant shrink-0">
+          <h1 className="text-[22px] lg:text-[21px] leading-6 lg:leading-7 font-normal text-[#C09D59] font-cormorant shrink-0">
             {props.price}
           </h1>
         </div>
-        <p className="text-[11px] lg:text-[12px] leading-5 font-normal text-[#988C81]">
+        <p className="text-[14px] lg:text-[12px] leading-5 font-normal text-[#988C81]">
           {props.text}
         </p>
       </div>
@@ -513,7 +511,7 @@ function MenuSection({ title, children }) {
         {title}
       </h1>
       {/* 1 col on mobile, 2 on sm, 3 on lg */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7.5 pb-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-11 lg:gap-7.5 pb-2">
         {children}
       </div>
     </div>

@@ -52,7 +52,7 @@ function PageHeader() {
                 Reservations
             </p>
 
-            <h1 className="text-[60px] font-thin leading-18 text-[#F8F6F1]  font-cormorant">
+            <h1 className="text-[40px] lg:text-[60px] font-thin leading-18 text-[#F8F6F1]  font-cormorant">
                 Reserve Your <span className="italic">Evening</span>
             </h1>
 

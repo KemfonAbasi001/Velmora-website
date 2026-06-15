@@ -492,13 +492,13 @@ function Fullcomp(props) {
             <div className="w-full h-72 lg:h-100 overflow-hidden group relative">
                 <img src={props.imageText} alt="" className="h-full w-full block object-cover transition-all duration-500 ease-in-out group-hover:scale-105" />
                 <div className="absolute bottom-4 left-4 lg:bottom-6 lg:left-6">
-                    <h1 className="text-[22px] lg:text-[30px] leading-7 lg:leading-9 font-light text-[#F8F6F1] font-cormorant">{props.header}</h1>
-                    <p className="text-[11px] lg:text-[12px] leading-4 font-normal tracking-[.6px] text-[#988C81]">{props.paragraph}</p>
+                    <h1 className="text-[24px] lg:text-[30px] leading-7 lg:leading-9 font-light text-[#F8F6F1] font-cormorant">{props.header}</h1>
+                    <p className="text-[13px] lg:text-[12px] leading-4 font-normal tracking-[.6px] text-[#988C81]">{props.paragraph}</p>
                 </div>
             </div>
             <div className="flex justify-between">
-                <h1 className="text-[18px] lg:text-[20px] leading-7 font-normal text-[#C09D59] font-cormorant">{props.price}</h1>
-                <h1 className="text-[11px] lg:text-[12px] leading-4 font-normal tracking-[2.4px] text-[#988C81] uppercase">View dish</h1>
+                <h1 className="text-[25px] lg:text-[20px] leading-7 font-normal text-[#C09D59] font-cormorant">{props.price}</h1>
+                <a href="/menu" className="text-[13px] lg:text-[12px] leading-4 font-normal tracking-[2.4px] text-[#988C81] uppercase">View dish</a>
             </div>
         </div>
     )
@@ -520,11 +520,11 @@ function HomeSection() {
             {/* Hero Section */}
             <section
                 style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(${bg_image})` }}
-                className='w-full py-45 lg:py-35 flex items-center justify-center flex-col text-center gap-5 bg-cover bg-center bg-no-repeat'
+                className='w-full py-55 lg:py-35 flex items-center justify-center flex-col text-center gap-5 bg-cover bg-center bg-no-repeat'
             >
                 <h1
                     data-reveal
-                    className='text-[35px] leading-[52px] tracking-[3.2px] lg:text-[90px] lg:leading-[96px] lg:tracking-[6.4px] font-light text-[#F8F6F1] font-cormorant px-4'
+                    className='text-[45px] leading-[52px] tracking-[3.2px] lg:text-[90px] lg:leading-[96px] lg:tracking-[6.4px] font-light text-[#F8F6F1] font-cormorant px-4'
                 >
                     Where Every <br /><span className='text-[#AD8D50] italic'>Flavour</span> Tells a Story
                 </h1>
@@ -601,11 +601,11 @@ function HomeSection() {
                     <div className="w-full flex flex-col justify-center items-center gap-12 lg:gap-20 text-center">
                         <div className="flex flex-col gap-6 lg:gap-8 w-full justify-center items-center">
 
-                            <p data-reveal className="text-[11px] lg:text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px] font-inter">
+                            <p data-reveal className="text-[10px] lg:text-[12px] leading-4 font-normal uppercase text-[#C09D59] tracking-[4.8px] font-inter">
                                 Signature Collection
                             </p>
 
-                            <h1 data-reveal data-delay="80" className="text-[40px] leading-[44px] lg:text-[60px] lg:leading-18 font-thin text-[#F8F6F1] font-cormorant">
+                            <h1 data-reveal data-delay="80" className="text-[37px] leading-[44px] lg:text-[60px] lg:leading-18 font-thin text-[#F8F6F1] font-cormorant">
                                 Chef's <span className="italic">Masterpieces</span>
                             </h1>
 
