@@ -13,8 +13,10 @@
 
 @import "tailwindcss";
 
-#experience-card:nth-child(even) {
+@media screen and (min-width: 1024px){
+  #experience-card:nth-child(even) {
     flex-direction: row-reverse;
+}
 }
 
 @theme {
@@ -26,9 +28,9 @@
   /* color: #322e2a80; */
 }
 
-#experience-card:nth-of-type(even){
+/* #experience-card:nth-of-type(even){
   flex-direction: column;
-}
+} */
 
 /* === SCROLL REVEAL ANIMATION === */
 [data-reveal] {

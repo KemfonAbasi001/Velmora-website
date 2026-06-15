@@ -154,10 +154,10 @@ function FooterSec() {
     <footer className="w-full flex justify-center items-center bg-[#0A0A0A] py-12.5 border-t border-[#322e2a]" id="contact">
       <div className="w-[90%] flex flex-col gap-5">
 
-        <div className="flex justify-between py-12.5">
+        <div className="gris-cols-1 grid lg:grid-cols-4 gap-10 py-9">
 
           {/* Logo */}
-          <div data-reveal className="w-[22%] flex flex-col gap-3.75">
+          <div data-reveal className="flex flex-col gap-5">
             <button
               onClick={() => goTo("/")}
               className="text-[#F8F6F1] hover:opacity-80 transition-opacity duration-300 bg-transparent border-0 cursor-pointer text-left p-0"
@@ -167,36 +167,36 @@ function FooterSec() {
           </div>
 
           {/* Navigate */}
-          <div data-reveal data-delay="80" className="w-[22%] flex flex-col gap-3.75">
-            <p className="text-[12px] uppercase text-[#C09D59] tracking-[4.8px] font-normal font-inter">Navigate</p>
-            <button onClick={() => goTo("/menu")}        className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Menu</button>
-            <button onClick={() => goTo("/reservation")} className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Reservations</button>
-            <button onClick={() => goTo("/experience")}  className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Experiences</button>
-            <button onClick={() => goTo("/story")}       className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Our Story</button>
+          <div data-reveal data-delay="80" className="flex flex-col gap-6 lg:gap-3.75">
+            <p className="text-[15px] lg:text-[12px] uppercase text-[#C09D59] tracking-[4.8px] font-normal font-inter">Navigate</p>
+            <button onClick={() => goTo("/menu")}        className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Menu</button>
+            <button onClick={() => goTo("/reservation")} className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Reservations</button>
+            <button onClick={() => goTo("/experience")}  className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Experiences</button>
+            <button onClick={() => goTo("/story")}       className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Our Story</button>
           </div>
 
           {/* Experience */}
-          <div data-reveal data-delay="160" className="w-[22%] flex flex-col gap-3.75">
-            <p className="text-[12px] uppercase text-[#C09D59] tracking-[4.8px] font-normal font-inter">Experience</p>
-            <button onClick={() => goTo("/events")}  className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Private Dining</button>
-            <button onClick={() => goTo("/story")}   className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Chef's Table</button>
-            <button onClick={() => goTo("/events")}  className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Events</button>
-            <button onClick={() => goTo("/menu")}    className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Delivery</button>
-            <button onClick={refreshAndScrollTop}    className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Gift Cards</button>
+          <div data-reveal data-delay="160" className="flex flex-col gap-6 lg:gap-3.75">
+            <p className="text-[15px] lg:text-[12px] uppercase text-[#C09D59] tracking-[4.8px] font-normal font-inter">Experience</p>
+            <button onClick={() => goTo("/events")}  className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Private Dining</button>
+            <button onClick={() => goTo("/story")}   className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Chef's Table</button>
+            <button onClick={() => goTo("/events")}  className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Events</button>
+            <button onClick={() => goTo("/menu")}    className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Delivery</button>
+            <button onClick={refreshAndScrollTop}    className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer text-left p-0">Gift Cards</button>
           </div>
 
           {/* Visit */}
-          <div data-reveal data-delay="240" className="w-[22%] flex flex-col gap-3.75">
-            <p className="text-[12px] uppercase text-[#C09D59] tracking-[4.8px] font-normal font-inter">Visit</p>
-            <p className="text-[14px] font-normal leading-5 text-[#988C81] font-inter">42 Gold Street<br />New York, NY 10038</p>
-            <p className="text-[14px] font-normal leading-5 text-[#988C81] font-inter">Tue — Sun: 5:30 PM — 12:00 AM<br />Monday: Closed</p>
-            <p className="text-[14px] font-normal leading-5 text-[#988C81] font-inter">+1 (212) 555-0184</p>
+          <div data-reveal data-delay="240" className="flex flex-col gap-6 lg:gap-3.75">
+            <p className="text-[15.7px] lg:text-[14px] uppercase text-[#C09D59] tracking-[4.8px] font-normal font-inter">Visit</p>
+            <p className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] font-inter">42 Gold Street<br />New York, NY 10038</p>
+            <p className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] font-inter">Tue — Sun: 5:30 PM — 12:00 AM<br />Monday: Closed</p>
+            <p className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] font-inter">+1 (212) 555-0184</p>
           </div>
 
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-3.75 border-t border-[#322e2a] flex justify-between items-center">
+        <div className="pt-3.75 border-t border-[#322e2a] flex-col lg:flex-row gap-5 flex justify-between items-center">
           <p className="text-[14px] font-normal leading-5 text-[#988C81] font-inter">© {new Date().getFullYear()} VELMORA. All rights reserved.</p>
           <div className="flex gap-5">
             <button onClick={refreshAndScrollTop} className="text-[14px] font-normal leading-5 text-[#988C81] hover:text-white transition-all duration-200 font-inter bg-transparent border-0 cursor-pointer p-0">Privacy</button>

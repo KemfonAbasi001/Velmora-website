@@ -314,10 +314,10 @@ function Contact() {
         </div>
 
         {/* Two Column Layout */}
-        <div className="w-[90%] flex justify-between items-start">
+        <div className="w-[90%] flex-col gap-20 lg:gap-0 lg:flex-row flex justify-between items-start">
 
           {/* Left — Visit Info */}
-          <div className="w-[47%] flex flex-col gap-8">
+          <div className="w-full lg:w-[47%] flex flex-col gap-8">
             <h2 data-reveal className="text-[40px] font-light leading-12 text-[#F8F6F1] font-cormorant">
               Visit <span className="italic">Velmora</span>
             </h2>
@@ -373,7 +373,7 @@ function Contact() {
           </div>
 
           {/* Right — Form */}
-          <div data-reveal data-delay="120" className="w-[47%]">
+          <div data-reveal data-delay="120" className="w-full lg:w-[47%]">
             <form className="flex flex-col gap-7.5" onSubmit={handleSubmit}>
 
               <FormField
