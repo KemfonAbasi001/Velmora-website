@@ -286,7 +286,7 @@ function Story() {
 
       {/* Hero */}
       <section
-        className="w-full pt-65 pb-12.5 pl-12.5"
+        className="w-full pt-65 pb-12.5 pl-5 lg:pl-12.5"
         style={{
           backgroundImage: `
             linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0.5) 60%, rgba(10,10,10,.95) 100%),
@@ -298,11 +298,11 @@ function Story() {
           backgroundAttachment: "fixed",
         }}
       >
-        <div className="flex flex-col gap-3.75">
+        <div className="flex flex-col gap-3.75 ">
           <p data-reveal className="text-[12px] leading-4 font-normal tracking-[4.8px] text-[#C09D59] uppercase font-inter">
             Our Story
           </p>
-          <h1 data-reveal data-delay="80" className="text-[72px] font-light leading-18 text-[#F8F6F1] font-cormorant">
+          <h1 data-reveal data-delay="80" className="text-[53px] lg:text-[72px] font-light leading-18 text-[#F8F6F1] font-cormorant">
             The <span className="italic">Artisan</span>
           </h1>
         </div>
@@ -310,14 +310,14 @@ function Story() {
 
       {/* Chef Section */}
       <section className="w-full bg-[#0A0A0A] flex flex-col items-center gap-20 py-50">
-        <div className="w-[90%] flex justify-between items-center">
+        <div className="w-[90%] flex flex-col gap-15 lg:gap-0 lg:flex-row justify-between items-center">
 
-          <div data-reveal className="w-[47%] flex flex-col gap-3.75">
-            <p className="text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
+          <div data-reveal className="w-full lg:w-[47%] flex flex-col gap-3.75">
+            <p className="text-[10px] lg:text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
               Executive Chef
             </p>
-            <h2 className="text-[48px] font-light leading-12 text-[#F8F6F1] font-cormorant">
-              Alessandro <span className="italic"><br/>Moretti</span>
+            <h2 className="text-[35px] lg:text-[48px] font-light leading-12 text-[#F8F6F1] font-cormorant">
+              Alessandro <span className="italic"><br className="hidden lg:block"/>Moretti</span>
             </h2>
             <p className="text-[16px] leading-6 font-normal text-[#988C81] font-inter">
               Born in the rolling hills of Piedmont, Chef Moretti's culinary journey began in his grandmother's kitchen, where he first understood that food is the language of love, memory, and culture.
@@ -331,7 +331,7 @@ function Story() {
             <Decorator />
           </div>
 
-          <div data-reveal data-delay="120" className="w-[47%]">
+          <div data-reveal data-delay="120" className="w-full lg:w-[47%]">
             <img src={chefImage} alt="Chef Alessandro Moretti" className="w-full block" />
           </div>
 
@@ -340,14 +340,14 @@ function Story() {
 
       {/* Philosophy Quote */}
       <section className="w-full py-37.5 bg-[rgb(22,20,19)] flex flex-col items-center justify-center gap-12.5">
-        <div className="w-[90%] flex flex-col items-center gap-5 text-center">
-          <p data-reveal className="text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
+        <div className="w-[90%] flex flex-col items-center gap-8 lg:gap-5 text-center">
+          <p data-reveal className="text-[10px] lg:text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
             Philosophy
           </p>
-          <h2 data-reveal data-delay="80" className="text-[40px] font-light leading-12 text-[#F8F6F1] font-cormorant max-w-175 italic">
+          <h2 data-reveal data-delay="80" className="text-[30px] lg:text-[40px] font-light leading-12 text-[#F8F6F1] font-cormorant max-w-175 italic">
             "We do not cook food. We compose experiences. Every plate is a movement in a symphony — precise, emotional, and unrepeatable."
           </h2>
-          <p data-reveal data-delay="160" className="text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
+          <p data-reveal data-delay="160" className="text-[10px] lg:text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
             — Chef Alessandro Moretti
           </p>
         </div>
@@ -360,7 +360,7 @@ function Story() {
           <p data-reveal className="text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
             Journey
           </p>
-          <h1 data-reveal data-delay="80" className="text-[48px] font-thin leading-18 text-[#F8F6F1] font-cormorant">
+          <h1 data-reveal data-delay="80" className="text-[35px] lg:text-[48px] font-thin leading-18 text-[#F8F6F1] font-cormorant">
             Our <span className="italic">Heritage</span>
           </h1>
         </div>

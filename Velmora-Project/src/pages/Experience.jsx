@@ -565,11 +565,11 @@ function CardExp(props) {
 
       {/* Text block */}
       <div className="w-full lg:w-[50%] flex flex-col gap-3 lg:gap-5 p-6 sm:p-10 lg:p-15 bg-[#2c28264d] justify-center">
-        <p className="leading-4 font-normal uppercase font-inter tracking-[4.8px] text-[11px] lg:text-[12px] text-[#c09d59]">
+        <p className="leading-4 font-normal uppercase font-inter tracking-[4.8px] text-[10px] lg:text-[12px] text-[#c09d59]">
           {props.smalltext}
         </p>
 
-        <h2 className="text-[32px] lg:text-[40px] font-extralight leading-tight lg:leading-12 text-[#F8F6F1] font-cormorant">
+        <h2 className="text-[30px] lg:text-[40px] font-extralight leading-tight lg:leading-12 text-[#F8F6F1] font-cormorant">
           {props.bigtext}
         </h2>
 

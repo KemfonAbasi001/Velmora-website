@@ -398,8 +398,8 @@ function Events() {
 
       <section style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(${bg_image})` }} className="w-full bg-cover bg-center bg-no-repeat pt-70 pl-6 lg:pt-65 pb-12.5 pr-0 lg:pl-12.5">
         <div className="flex flex-col gap-3.75">
-            <p data-reveal className="text-[12px] leading-4 font-normal tracking-[4.8px] text-[#C09D59] uppercase font-inter">Private Events</p>
-            <h1 data-reveal data-delay="80" className="text-[60px] lg:text-[72px] leading-18 font-light text-[#F8F6F1] font-cormorant">Bespoke <span className="italic">Gatherings</span></h1>
+            <p data-reveal className="text-[10px] lg:text-[12px] leading-4 font-normal tracking-[4.8px] text-[#C09D59] uppercase font-inter">Private Events</p>
+            <h1 data-reveal data-delay="80" className="text-[53px] lg:text-[60px] lg:text-[72px] leading-18 font-light text-[#F8F6F1] font-cormorant">Bespoke <span className="italic">Gatherings</span></h1>
         </div>
       </section>
 
@@ -410,7 +410,7 @@ function Events() {
         <p data-reveal className="text-xs uppercase tracking-[4.8px] text-[#C09D59] font-inter">
           Occasions
         </p>
-        <h1 data-reveal data-delay="80" className="text-[33px] lg:text-[48px] font-light leading-12 text-[#F8F6F1] font-cormorant">
+        <h1 data-reveal data-delay="80" className="text-[31px] lg:text-[48px] font-light leading-12 text-[#F8F6F1] font-cormorant">
           Every Moment <span className="italic">Elevated</span>
         </h1>
         {/* Decorator */}
@@ -422,7 +422,7 @@ function Events() {
       </div>
 
       {/* Cards Grid */}
-      <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7.5">
+      <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-9 lg:gap-7.5">
         {eventCards.map((card, i) => (
           <EventCard
             key={card.title}

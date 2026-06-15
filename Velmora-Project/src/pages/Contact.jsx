@@ -236,11 +236,11 @@ function InfoRow(props) {
     <div data-reveal data-delay={props.delay} className="flex gap-7.5 items-center">
       {props.icon}
       <div className="flex flex-col gap-.75">
-        <h3 className="text-xl font-normal text-[#F8F6F1] font-cormorant">
+        <h3 className="text-[22px] lg:text-xl font-normal text-[#F8F6F1] font-cormorant">
           {props.title}
         </h3>
         {props.lines.map((line, i) => (
-          <p key={i} className="text-sm font-normal leading-5 text-[#988C81] font-inter">
+          <p key={i} className="text-[15px] lg:text-sm font-normal leading-5 text-[#988C81] font-inter">
             {line}
           </p>
         ))}
@@ -302,10 +302,10 @@ function Contact() {
 
         {/* Header */}
         <div className="w-[90%] flex flex-col items-center gap-5 text-center">
-          <p data-reveal className="text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
+          <p data-reveal className="text-[10px] lg:text-[12px] leading-4 font-normal uppercase tracking-[4.8px] text-[#C09D59] font-inter">
             Get in Touch
           </p>
-          <h1 data-reveal data-delay="80" className="text-[60px] font-thin leading-18 text-[#F8F6F1] font-cormorant">
+          <h1 data-reveal data-delay="80" className="text-[55px] lg:text-[60px] font-thin leading-18 text-[#F8F6F1] font-cormorant">
             <span className="italic">Contact</span> Us
           </h1>
           <div data-reveal data-delay="160">
@@ -318,7 +318,7 @@ function Contact() {
 
           {/* Left — Visit Info */}
           <div className="w-full lg:w-[47%] flex flex-col gap-8">
-            <h2 data-reveal className="text-[40px] font-light leading-12 text-[#F8F6F1] font-cormorant">
+            <h2 data-reveal className="text-[35px] lg:text-[40px] font-light leading-12 text-[#F8F6F1] font-cormorant">
               Visit <span className="italic">Velmora</span>
             </h2>
 
@@ -327,7 +327,7 @@ function Contact() {
               title="Address"
               lines={["42 Gold Street", "New York, NY 10038"]}
               icon={
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 h-6 w-6 lg:h-4 lg:w-4">
                   <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
@@ -339,7 +339,7 @@ function Contact() {
               title="Hours"
               lines={["Tue — Sun: 5:30 PM — 12:00 AM", "Monday: Closed"]}
               icon={
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 h-6 w-6 lg:h-4 lg:w-4">
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
@@ -351,7 +351,7 @@ function Contact() {
               title="Phone"
               lines={["+1 (212) 555-0184"]}
               icon={
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 h-6 w-6 lg:h-4 lg:w-4">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               }
@@ -362,7 +362,7 @@ function Contact() {
               title="Email"
               lines={["hello@velmora.com"]}
               icon={
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#C09D59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 h-6 w-6 lg:h-4 lg:w-4">
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>

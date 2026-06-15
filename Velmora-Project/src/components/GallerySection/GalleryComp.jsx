@@ -377,7 +377,7 @@ function Gallery() {
     }
 
     return (
-        <section className="w-full bg-[#0A0A0A] flex flex-col items-center gap-12 md:gap-20 py-16 md:py-50">
+        <section className="w-full bg-[#0A0A0A] flex flex-col items-center gap-12 md:gap-20 py-45 md:py-50">
 
             {/* === HEADER === */}
             <div className="w-[90%] flex flex-col items-center gap-4 md:gap-5 text-center">
@@ -426,7 +426,7 @@ function Gallery() {
                                 key={filter.key}
                                 onClick={function() { handleFilter(filter.key); }}
                                 className={[
-                                    "text-[10px] md:text-[12px] font-normal leading-4 tracking-[1.8px] uppercase",
+                                    "text-[13px] md:text-[12px] font-normal leading-4 tracking-[1.8px] uppercase",
                                     "px-3.5 py-2 md:px-5 md:py-2.5",
                                     "border-0 transition-all duration-500 cursor-pointer whitespace-nowrap flex-shrink-0",
                                     isActive

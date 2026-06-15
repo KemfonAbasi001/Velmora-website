@@ -188,8 +188,8 @@ function FooterSec() {
           {/* Visit */}
           <div data-reveal data-delay="240" className="flex flex-col gap-6 lg:gap-3.75">
             <p className="text-[15.7px] lg:text-[14px] uppercase text-[#C09D59] tracking-[4.8px] font-normal font-inter">Visit</p>
-            <p className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] font-inter">42 Gold Street<br />New York, NY 10038</p>
-            <p className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] font-inter">Tue — Sun: 5:30 PM — 12:00 AM<br />Monday: Closed</p>
+            <p className="text-[15.7px] lg:text-[14px] font-normal leading-6 text-[#988C81] font-inter">42 Gold Street<br />New York, NY 10038</p>
+            <p className="text-[15.7px] lg:text-[14px] font-normal leading-6 text-[#988C81] font-inter">Tue — Sun: 5:30 PM — 12:00 AM<br />Monday: Closed</p>
             <p className="text-[15.7px] lg:text-[14px] font-normal leading-5 text-[#988C81] font-inter">+1 (212) 555-0184</p>
           </div>
 
