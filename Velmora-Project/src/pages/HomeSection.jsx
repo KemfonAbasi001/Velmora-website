@@ -48,7 +48,7 @@ function HomeSection() {
             >
                 <h1
                     data-reveal
-                    className='text-[50px] leading-[44px] tracking-[3.2px] lg:text-[90px] lg:leading-[96px] lg:tracking-[6.4px] font-light text-[#F8F6F1] font-cormorant px-4'
+                    className='text-[50px] leading-[55px] tracking-[3.2px] lg:text-[90px] lg:leading-[96px] lg:tracking-[6.4px] font-light text-[#F8F6F1] font-cormorant px-4'
                 >
                     Where Every <br /><span className='text-[#AD8D50] italic'>Flavour</span> Tells a Story
                 </h1>
